@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial, helvetica;
+    background-image: url('img.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menu{
+    padding: 0;
+    background: #258508;
+    width: 100%;
+    display: flex;
+    max-width: 8000px;
+    margin: auto;
+    box-shadow: 7px 13px 37px #000000;
+  }
+  
+    .menu li a{
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      padding: 20px;
+      display: flex;
+      display: block;
+    }
+  
+    .menu li{
+      display: inline-block;
+      text-align: center;
+    }
+  
+    .menu li a:hover{
+      background: #32bb54;
+    }
+
+    header{
+      display: flex;
+        text-align: center;
+      padding: 0.5em;
+    }
+    
+    .logo{
+      display: flex;
+    }
+    
+    .logo img{
+      height: 45px;
+    }
+    
+    @media (max-width:220px){
+      header{
+        flex-direction: column;
+      }
+    }
+
+    .form-registro {
+        width: 550px;
+        background: #258508;
+        padding: 30px;
+        margin: auto;
+        margin-top: 60px;
+        border-radius: 15px;
+        font-family: 'calibri';
+        color: rgb(255, 247, 247);
+        box-shadow: 7px 13px 37px #000000;
+      }
+
+  .form-registro h4 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+  }
+
+      .form-registro p {
+        height: 50px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 50px;
+        color: rgb(255, 255, 255);
+      }
+
+      .form-registro .botons {
+        width: 100%;
+        background: #ffffff;
+        padding: 15px;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+      }
+
+      .form-registro .botons:hover{
+        background: #13d537;
+      }
+      h1{
+        color: rgb(77, 255, 0); 
+    }
+
+    .confirmacion {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
