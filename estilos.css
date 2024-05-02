@@ -43,7 +43,7 @@ header{
     text-decoration: none;
     color: rgb(255, 255, 255);
     padding: 22px;
-	display: flex;
+    display: flex;
     display: block;
 	
   }
@@ -64,7 +64,7 @@ header{
   .footer li a{
 	text-decoration: none;
 	color: white;
-	padding: 16px;
+	padding: 15px;
 	display: block;
 	text-align: center;
   }
@@ -77,6 +77,19 @@ header{
   }
   h1{
     color: rgb(0, 255, 4); 
+  }
+	  
+.parrafo{
+	width: 550px; 
+	height: 490px;
+	padding: 20px 20px; 
+	font-size: 20px;  
+	line-height: 1.5;
+	background: #fff; 
+	box-shadow: 7px 13px 37px;
+	border-radius: 7px;
+	margin: auto; 
+	text-align: justify;
 }
 
 
