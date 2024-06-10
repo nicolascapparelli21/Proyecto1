@@ -6,7 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto Banco Becker</title>
     <link rel="icon" href="iconn.ico">
-    <link rel="stylesheet" href="css/estilos.css";
+    <link rel="stylesheet" href="css/estilos.css">
+    <script>
+        function validarFormulario() {
+          var nombre = document.getElementById('nombres').value;
+          var email = document.getElementById('correo').value; <!-- Cambiado de 'email' a 'correo' -->
+          var mensaje = document.getElementById('consulta').value;
+    
+          if (nombre.trim() == '' || email.trim() == '' || mensaje.trim() == '') {
+            alert('Por favor, complete todos los campos.');
+            return false;
+          }
+    
+          alert('¡Formulario enviado con éxito!');
+          return true;
+        }
+    </script>
 </head>
 <body>
     <ul class="menu">
@@ -14,7 +29,7 @@
         <li><a href="index.html">Contacto</a></li>
 		<header>
 			<div class="logo">
-			<img src="logo.png" alt="Logo"
+				<img src="logo.png" alt="Logo">
 			</div>
 		</header>
     </ul>
@@ -22,22 +37,20 @@
     <header>
     <section class="form-registro">
         <h4>Contacto Banco Becker</h4>
-        <form
-             action="https://formspree.io/f/mnqerqra"
-             method="POST">
+        <form action="https://formspree.io/f/mnqerqra" method="POST" onsubmit="return validarFormulario();">
             <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
             <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo Electronico">
             <input class="controls" type="text" name="consulta" id="consulta" placeholder="Ingrese su Consulta">
-            <p>Acepto los terminos y condiciones</p>
+            <p>Acepto los términos y condiciones</p>
             <br>
-            <input class="botons" type= "submit" value= "Enviar">
+            <input class="botons" type="submit" value="Enviar">
             <br>
-            <br>  
+            <br>
             <br>
             <section class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.735340910941!2d-58.72548861101105!3d-34.6680683872188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbff0a2d251bf%3A0xe93dca72e7a983db!2sBanco%20de%20la%20Naci%C3%B3n%20Argentina!5e0!3m2!1ses-419!2sar!4v1713408552930!5m2!1ses-419!2sar" width="490" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="480" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.735340910941!2d-58.72548861101105!3d-34.6680683872188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbff0a2d251bf%3A0xe93dca72e7a983db!2sBanco%20de%20la%20Naci%C3%B3n%20Argentina!5e0!3m2!1ses-419!2sar!4v1713408552930!5m2!1ses-419!2sar" width="490" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
-            </form>
+        </form>
     </section>
 </body>
 </html>
